@@ -176,6 +176,8 @@ details.kf li { break-inside: avoid; }
 .index-body h4 a:hover { color: var(--accent); }
 .index-body h4 a::after { content: "↗"; font-size: 0.6em; opacity: 0.6; transition: transform 0.2s ease, opacity 0.2s ease; }
 .index-body h4 a:hover::after { transform: translate(2px, -2px); opacity: 1; }
+.index-date { display: flex; align-items: center; gap: 0.5em; font-size: 0.8125rem; color: var(--ink-muted); margin-bottom: 0.3rem; }
+.index-date .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); flex: none; }
 .index-body p.i-desc { color: var(--ink-muted); font-size: 0.9375rem; }
 .index-body details.kf { margin-top: 0.6rem; }
 .index-body details.kf summary { font-size: 0.8125rem; }
