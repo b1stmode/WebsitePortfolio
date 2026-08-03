@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tima Yakushevych Portfolio</title>
+  <title>Tymofii Yakushevych Portfolio</title>
   <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/121379893?v=4">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@700&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
     rel="stylesheet">
 
   <!-- CSS -->
@@ -17,453 +17,221 @@
 
 <body>
 
-  <!-- Language switcher -->
-  <div class="lang-switcher">
-    <a href="index-cs.html" title="Czech" aria-label="Switch to Czech">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg" alt="CZ">
-    </a>
-    <a href="index.html" title="English" aria-label="Switch to English">
-      <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="EN">
-    </a>
+<header class="site-header">
+  <div class="wrap" style="display:flex; align-items:center; justify-content:space-between;">
+    <span class="wordmark">Tymofii Yakushevych</span>
+    <nav class="lang-switch" aria-label="Language">
+      <button type="button" data-lang-btn="en" aria-pressed="true" class="is-active">EN</button>
+      <span class="sep" aria-hidden="true">·</span>
+      <button type="button" data-lang-btn="cs" aria-pressed="false">CZ</button>
+    </nav>
   </div>
+</header>
 
-  <!-- Intro / About Section -->
-  <section class="intro">
-    <div class="intro-bg"></div>
-    <section id="hero">
-      <h1>Tymofii Yakushevych</h1>
-      <p>Ideas in motion, code in place.</p>
-    </section>
-    <!-- About Section -->
-    <section class="about-layout">
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="marker" data-i18n="eyebrow">Software &amp; game developer</p>
+      <h1><span data-i18n="heroLine1">Ideas in motion, </span><span class="accent-word" data-i18n="heroAccent">code in place.</span></h1>
+      <p class="hero-sub" data-i18n="heroSub">Games, web apps, and developer tools — built one problem at a time.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="wrap about-grid">
+      <div class="about-photo"><img src="MeTatrasNoHd2.jpg" alt="Portrait photo"></div>
       <div class="about-text">
-        <p>
-          I build games, web apps, and developer tools — whatever the problem calls for.
-          Each project is a chance to learn something new, solve a real problem, and ship
-          something I'm proud of.
-        </p>
-        <p>
-          I enjoy spotting gaps and building something to fill them — from a gear management
-          PWA to a VS Code extension on the Marketplace. I work with AI as a genuine part of
-          my process, using it to move faster while keeping all the decisions my own.
-        </p>
-        <p>
-          My approach is hands-on: I dive in, figure out what works, learn from what doesn't,
-          and keep iterating.
-        </p>
-        <p>
-          This portfolio reflects that journey — how I think, what I build, and how I grow
-          as a developer.
-        </p>
+        <p data-i18n="aboutP1">I build games, web apps, and developer tools — whatever the problem calls for.</p>
+        <p data-i18n="aboutP2">My approach is hands-on: dive in, figure out what works, learn from what doesn't, and keep iterating.</p>
       </div>
-
-      <div class="about-image">
-        <img src="MeTatrasNoHd2.jpg" alt="Developer portrait photo" />
-      </div>
-    </section>
-
-    <!-- CTA Scroll Indicator -->
-    <section class="cta-scroll">
-      <p>See my dev journey below!</p>
-      <div class="cta-arrow-wrapper">
-        <div class="cta-arrow"></div>
-      </div>
-    </section>
-
-  </section>
-  <!-- Skills Section -->
-  <section id="skills-learning">
-    <div class="skills-inner">
-      <!-- Section Headline -->
-      <h2 class="section-title">Skills</h2>
-      <div class="skills-wrapper">
-        <!-- Skills Table -->
-        <div class="skills-table">
-          <!-- Game Development Column -->
-          <div class="skill-column">
-            <h3>Game Development</h3>
-            <ul>
-              <li>
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/unity.svg" alt="Unity Logo">
-                Unity 3D
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/csharp.svg" alt="C# Logo">
-                C#
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/blender.svg" alt="Blender Logo">
-                Blender
-              </li>
-            </ul>
-          </div>
-
-          <!-- Web / Software Development Column -->
-          <div class="skill-column">
-            <h3>Web & Software</h3>
-            <ul>
-              <li>
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg" alt="HTML Logo">
-                HTML
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/css3.svg" alt="CSS Logo">
-                CSS
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg" alt="JavaScript Logo">
-                JS
-              </li>
-            </ul>
-          </div>
-
-          <!-- Tools Column -->
-          <div class="skill-column">
-            <h3>Tools</h3>
-            <ul>
-              <li>
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/visualstudiocode.svg"
-                  alt="VS Code Logo">
-                VS Code
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/visualstudio.svg"
-                  alt="Visual Studio Logo">
-                Visual Studio
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" alt="GitHub Logo">
-                GitHub
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/gitlab.svg" alt="GitLab Logo">
-                GitLab
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg" alt="ChatGPT Logo">
-                ChatGPT
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/githubcopilot.svg"
-                  alt="GitHub Copilot Logo">
-                GitHub Copilot
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/anthropic.svg" alt="Claude Code Logo">
-                Claude Code
-              </li>
-            </ul>
-          </div>
-
-          <!-- Project Management Column -->
-          <div class="skill-column">
-            <h3>Project Management</h3>
-            <ul>
-              <li>
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/obsidian.svg" alt="Obsidian Logo">
-                Obsidian
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/notion.svg" alt="Notion Logo">
-                Notion
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/clickup.svg" alt="ClickUp Logo">
-                ClickUp
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="container">
-    <!-- Learning / Courses Section -->
-    <h2 class="section-title">Projects & Learning / Courses</h2>
-    <div class="learning-section">
-      <div class="learning-block">
-        <h4><a href="https://gamedev.tv/courses/unity6-complete-3d" target="_blank">GamedevTV – Full Unity Course</a>
-        </h4>
-        <p>Structured course expanding on Unity workflows and C# scripting through guided projects and practical game
-          systems.</p>
-      </div>
-
-      <div class="learning-block">
-        <h4><a
-            href="https://www.taylorfrancis.com/books/mono/10.1201/9780429810251/learning-programming-unity-3d-second-edition-alex-okita"
-            target="_blank">C# Programming with Unity 3D </a></h4>
-        <p>Beginner-friendly introduction to Unity and C#, used as an initial learning resource to understand core
-          scripting concepts and engine basics.</p>
-      </div>
-
-      <div class="learning-block">
-        <h4><a href="https://www.youtube.com/watch?v=g6v_vbqKYeU" target="_blank">Comprehensive Frontend course</a></h4>
-        <p>Project-based frontend course covering HTML, CSS, and JavaScript through short and practical projects.</p>
-      </div>
-
-      <div class="learning-block">
-        <h4><a href="https://anthropic.skilljar.com/" target="_blank">Anthropic Courses</a></h4>
-        <p>Completed: Claude 101, Introduction to Claude Cowork, and Claude Code 101 — covering AI fundamentals, prompt engineering, and building with Claude Code.</p>
+  <section class="skills">
+    <div class="wrap">
+      <p class="marker" data-i18n="skillsMarker">Skills</p>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Game Development</h3>
+          <ul>
+            <li><span class="icon-chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/unity.svg" alt=""></span> Unity 3D</li>
+            <li><span class="icon-chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/csharp.svg" alt=""></span> C#</li>
+            <li><span class="icon-chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/blender.svg" alt=""></span> Blender</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Web &amp; Software</h3>
+          <ul>
+            <li><span class="icon-chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg" alt=""></span> HTML</li>
+            <li><span class="icon-chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/css3.svg" alt=""></span> CSS</li>
+            <li><span class="icon-chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg" alt=""></span> JavaScript</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <ul>
+            <li><span class="icon-chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/visualstudiocode.svg" alt=""></span> VS Code</li>
+            <li><span class="icon-chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" alt=""></span> GitHub</li>
+            <li><span class="icon-chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/anthropic.svg" alt=""></span> Claude Code</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Project Management</h3>
+          <ul>
+            <li><span class="icon-chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/obsidian.svg" alt=""></span> Obsidian</li>
+            <li><span class="icon-chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/notion.svg" alt=""></span> Notion</li>
+            <li><span class="icon-chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/clickup.svg" alt=""></span> ClickUp</li>
+          </ul>
+        </div>
       </div>
     </div>
+  </section>
 
-    <h3 class="projects-subheading">Featured Projects</h3>
+  <section class="work">
+    <div class="wrap">
+      <h2 data-i18n="workHeading">Selected work</h2>
+      <p class="work-note" data-i18n="workNote">Two projects in full, everything else indexed below — no tab-switching required to see what matters.</p>
 
-    <!-- STANDBY -->
-    <div class="project project--featured">
-      <span class="project-badge project-badge--date">June 2026</span>
-            <span class="project-badge">Latest</span>
-      <div class="project-inner">
-        <div class="project-image">
-          <a href="https://standby-9um.pages.dev/" target="_blank">
-            <img src="STANDBY_Banner.png" alt="STANDBY: Your Range Tool">
+      <article class="case-study">
+        <p class="cs-meta">
+          <span class="dot"></span>
+          <span class="latest" data-i18n="standbyLatest">Latest</span>
+          <span data-i18n="standbyDate"> · June 2026</span>
+        </p>
+        <h3><a href="https://github.com/B1stmode/STANDBY-YourRangeTool" target="_blank" rel="noopener noreferrer">STANDBY: Your Range Tool</a></h3>
+        <p class="cs-role" data-i18n="standbyRole">Shot timer and training companion for airsoft and range training.</p>
+        <a class="cs-image" href="https://standby-9um.pages.dev/" target="_blank" rel="noopener noreferrer">
+          <img src="STANDBY_Banner.png" alt="STANDBY app screenshot">
+          <span class="cs-hint">View live ↗</span>
+        </a>
+        <p class="cs-desc" data-i18n="standbyDesc">A mobile-first Progressive Web App built for use on the range, during the drill, in the moment — timer, drill library, and training log in a single offline-capable tool. Designed and directed by me, with implementation developed through an AI-assisted workflow.</p>
+        <p class="cs-tags">Claude Code · JavaScript · HTML · CSS · IndexedDB · Cloudflare</p>
+        <details class="kf">
+          <summary data-i18n="kfLabel">Key features</summary>
+          <div class="kf-body">
+            <ul>
+              <li data-i18n="standbyKf1">Offline-first PWA — installable on phone and desktop, no account required</li>
+              <li data-i18n="standbyKf2">Audio-based shot detection — mic stops the timer on confirmed shots</li>
+              <li data-i18n="standbyKf3">Drill library with built-in classics and a custom drill builder</li>
+              <li data-i18n="standbyKf4">Calibration system — measures ambient noise to suggest your threshold</li>
+              <li data-i18n="standbyKf5">Training log — notebook-style entries with splits and scores</li>
+              <li data-i18n="standbyKf6">Field Mode for outdoor readability in direct sunlight</li>
+            </ul>
+            <p class="kf-links">
+              <a href="https://standby-9um.pages.dev/" target="_blank" rel="noopener noreferrer">Live app</a>
+              <a href="https://github.com/B1stmode/STANDBY-YourRangeTool" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </p>
+          </div>
+        </details>
+      </article>
+
+      <article class="case-study">
+        <p class="cs-meta"><span class="dot"></span><span data-i18n="gearupDate">May 2026</span></p>
+        <h3>GearUp: Your Operational Readiness</h3>
+        <p class="cs-role" data-i18n="gearupRole">Operational management platform for airsoft and milsim environments.</p>
+        <div class="cs-image"><img src="GearUP_Banner_Fixed.png" alt="GearUp app screenshot"></div>
+        <p class="cs-desc" data-i18n="gearupDesc">A mobile-first Progressive Web App designed for managing equipment, preparing loadouts, organizing operations, and tracking gear across devices. Designed and directed by me, with implementation developed through an AI-assisted workflow.</p>
+        <p class="cs-tags">Claude Cowork · JavaScript · HTML · CSS · IndexedDB · Cloudflare · Supabase</p>
+        <details class="kf">
+          <summary data-i18n="kfLabel">Key features</summary>
+          <div class="kf-body">
+            <ul>
+              <li data-i18n="gearupKf1">Offline-first PWA — installable on phone and desktop</li>
+              <li data-i18n="gearupKf2">Armory system: ownership, lending, maintenance, ammo tracking</li>
+              <li data-i18n="gearupKf3">Operations Center: briefings, objectives, maps, checklists</li>
+              <li data-i18n="gearupKf4">Automated loadout generation by season, role, and condition</li>
+              <li data-i18n="gearupKf5">Cross-device sync via Supabase with local persistence</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+
+      <p class="index-heading" data-i18n="indexHeading">More work — grows without a redesign</p>
+      <div class="index-list">
+        <div class="index-row">
+          <a class="index-thumb" href="https://github.com/B1stmode/claude-meter" target="_blank" rel="noopener noreferrer">
+            <img src="Claude-meter_Banner_Fix.png" alt="Claude-meter banner">
           </a>
-        </div>
-        <div class="project-content">
-          <h2>
-            <a href="https://github.com/B1stmode/STANDBY-YourRangeTool" target="_blank">STANDBY: Your Range Tool</a>
-          </h2>
-          <p>Shot timer and training companion for airsoft and range training.</p>
-          <p>
-            A mobile-first Progressive Web App built for use on the range, during the drill,
-            in the moment — timer, drill library, and training log in a single offline-capable tool.
-            Designed and directed by me, with implementation developed through AI-assisted workflow.
-          </p>
-          <div class="tech-stack">
-            <span>Claude Code</span>
-            <span>JavaScript</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>IndexedDB</span>
-            <span>Cloudflare</span>
+          <div class="index-body">
+            <h4><a href="https://github.com/B1stmode/claude-meter" target="_blank" rel="noopener noreferrer">Claude-meter</a></h4>
+            <p class="i-desc" data-i18n="cmDesc">VS Code usage limits, always visible.</p>
+            <details class="kf">
+              <summary data-i18n="kfLabel">Key features</summary>
+              <div class="kf-body">
+                <ul>
+                  <li data-i18n="cmKf1">Permanent status bar item — no commands needed</li>
+                  <li data-i18n="cmKf2">Tracks 5-hour and weekly usage limits</li>
+                  <li data-i18n="cmKf3">Color-coded by usage percentage</li>
+                </ul>
+              </div>
+            </details>
           </div>
         </div>
-      </div>
-      <details class="project-details">
-        <summary>Key Features</summary>
-        <ul>
-          <li>Offline-first PWA — installable on phone and desktop, no account required</li>
-          <li>Audio-based shot detection — microphone automatically stops the timer on confirmed shots</li>
-          <li>Drill library with built-in classics (El Presidente, Bill Drill, Mozambique) and custom drill builder</li>
-          <li>Calibration system — measures ambient noise floor and shot peaks to suggest your threshold</li>
-          <li>Training log — notebook-style range entries with splits, scores, and improvement notes</li>
-          <li>Field Mode for outdoor readability in direct sunlight</li>
-        </ul>
-        <p><a href="https://standby-9um.pages.dev/" target="_blank">Live App</a></p>
-        <p><a href="https://github.com/B1stmode/STANDBY-YourRangeTool" target="_blank">GitHub</a></p>
-      </details>
-    </div>
-
-    <!-- GearUp -->
-    <div class="project project--featured">
-      <span class="project-badge project-badge--date">May 2026</span>
-      <div class="project-inner">
-        <div class="project-image">
-          <img src="GearUP_Banner_Fixed.png" alt="GearUp app screenshot">
-        </div>
-        <div class="project-content">
-          <h2>GearUp: Your Operational Readiness</h2>
-          <p>Operational management platform for airsoft and milsim environments.</p>
-          <p>
-            A mobile-first Progressive Web App designed for managing equipment,
-            preparing loadouts, organizing operations, and tracking gear across devices.
-            Designed and directed by me, with implementation developed through AI-assisted workflow.
-          </p>
-          <div class="tech-stack">
-            <span>Claude Cowork</span>
-            <span>JavaScript</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>IndexedDB</span>
-            <span>Cloudflare</span>
-            <span>Supabase</span>
-          </div>
-        </div>
-      </div>
-      <details class="project-details">
-        <summary>Key Features</summary>
-        <ul>
-          <li>Offline-first PWA — installable on phone and desktop</li>
-          <li>Armory system: ownership, lending, maintenance intervals, ammunition tracking</li>
-          <li>Operations Center: briefings, objectives, maps, checklists, field tools</li>
-          <li>Automated loadout generation by season, role, and equipment condition</li>
-          <li>Cross-device sync via Supabase with local IndexedDB persistence</li>
-        </ul>
-      </details>
-    </div>
-
-    <!-- Claude Meter -->
-    <div class="project project--featured">
-      <span class="project-badge project-badge--date">May 2026</span>
-      <div class="project-inner">
-        <div class="project-image">
-          <a href="https://github.com/B1stmode/claude-meter" target="_blank">
-            <img src="Claude-meter_Banner_Fix.png" alt="Claude-meter Banner">
+        <div class="index-row">
+          <a class="index-thumb" href="https://b1stmode.itch.io/bohunice-the-last-shift" target="_blank" rel="noopener noreferrer">
+            <img src="BohuniceBanner.jpg" alt="Bohunice: The Last Shift screenshot">
           </a>
-        </div>
-        <div class="project-content">
-          <h2>
-            <a href="https://github.com/B1stmode/claude-meter" target="_blank">Claude-meter: Limits at a glance</a>
-          </h2>
-          <p>Claude Code usage limits, always visible.</p>
-          <p>
-            A VS Code extension that displays your Claude Code usage limits (5-hour session and weekly session)
-            as a permanent status bar item — always visible, no commands needed.
-            Designed and directed by me, code written with AI assistance.
-          </p>
-          <div class="tech-stack">
-            <span>Claude Code</span>
-            <span>JS</span>
-            <span>JSON</span>
-            <span>VS Code</span>
-            <span>GitHub</span>
-            <span>VS Marketplace</span>
+          <div class="index-body">
+            <h4><a href="https://b1stmode.itch.io/bohunice-the-last-shift" target="_blank" rel="noopener noreferrer">Bohunice: The Last Shift</a></h4>
+            <p class="i-desc" data-i18n="bhDesc">Atmospheric exploration game, solo long-term project.</p>
+            <details class="kf">
+              <summary data-i18n="kfLabel">Key features</summary>
+              <div class="kf-body">
+                <ul>
+                  <li data-i18n="bhKf1">First-person exploration in a fictionalized 1977</li>
+                  <li data-i18n="bhKf2">Custom radiation exposure and hazard systems</li>
+                  <li data-i18n="bhKf3">All models, textures, and levels built from scratch</li>
+                </ul>
+              </div>
+            </details>
           </div>
         </div>
+        <div class="index-row">
+          <a class="index-thumb" href="https://b1stmode.itch.io/rocket-dodge-gamedevtv-course-project" target="_blank" rel="noopener noreferrer">
+            <img src="RocketDodge_Banner.jpg" alt="Rocket Dodge screenshot">
+          </a>
+          <div class="index-body">
+            <h4><a href="https://github.com/B1stmode/RocketDodge_CourseProject" target="_blank" rel="noopener noreferrer">Rocket Dodge</a></h4>
+            <p class="i-desc" data-i18n="rdDesc">Physics-based precision timing game.</p>
+            <details class="kf">
+              <summary data-i18n="kfLabel">Key features</summary>
+              <div class="kf-body">
+                <ul>
+                  <li data-i18n="rdKf1">Physics-driven movement with unforgiving controls</li>
+                  <li data-i18n="rdKf2">Difficulty scaling across multiple levels</li>
+                  <li data-i18n="rdKf3">Menus, control scheme, and death counter added independently</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="index-row">
+          <a class="index-thumb" href="https://b1stmode.github.io/Roll-A-Dice_Project/" target="_blank" rel="noopener noreferrer">
+            <img src="Dice_Roll_Screen.jpeg" alt="Roll a Dice screenshot">
+          </a>
+          <div class="index-body">
+            <h4><a href="https://github.com/B1stmode/Roll-A-Dice_Project" target="_blank" rel="noopener noreferrer">Roll a Dice</a></h4>
+            <p class="i-desc" data-i18n="radDesc">Dice rolling simulator, vanilla JS.</p>
+            <details class="kf">
+              <summary data-i18n="kfLabel">Key features</summary>
+              <div class="kf-body">
+                <ul>
+                  <li data-i18n="radKf1">Two independent dice with separate roll histories</li>
+                  <li data-i18n="radKf2">Event-driven DOM manipulation — no frameworks</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </div>
+        <!-- Add new real projects here as additional .index-row blocks, same markup as above -->
       </div>
-      <details class="project-details">
-        <summary>Key Features</summary>
-        <ul>
-          <li>Permanent VS Code status bar item — always visible, no commands needed</li>
-          <li>Tracks both 5-hour session and weekly Claude Code usage limits</li>
-          <li>Color-coded bar: neutral / yellow / red by usage percentage</li>
-          <li>Hover tooltip shows quotas, reset countdowns, and last fetch time</li>
-          <li>No data collected — single request to Anthropic servers using your own token</li>
-        </ul>
-        <p><a href="https://github.com/B1stmode/claude-meter" target="_blank">GitHub</a></p>
-      </details>
     </div>
+  </section>
+</main>
 
-    <h3 class="projects-subheading">Other Projects</h3>
-    <div class="projects-grid">
+<footer><div class="wrap">&copy; 2026 Tymofii Yakushevych</div></footer>
 
-      <!-- Bohunice -->
-      <div class="project">
-        <span class="project-badge project-badge--date">February 2026</span>
-        <div class="project-inner">
-          <div class="project-image">
-            <a href="https://b1stmode.itch.io/bohunice-the-last-shift" target="_blank">
-              <img src="BohuniceBanner.jpg" alt="Bohunice: The Last Shift Screenshot">
-            </a>
-          </div>
-          <div class="project-content">
-            <h2>
-              <a href="https://b1stmode.itch.io/bohunice-the-last-shift" target="_blank">Bohunice: The Last Shift</a>
-            </h2>
-            <p><strong>Solo long-term project</strong> — active work in progress</p>
-            <p>
-              A first-person atmospheric exploration game set after a fictionalized nuclear accident at
-              the Jaslovské Bohunice power plant in 1977 Czechoslovakia.
-              All models, textures, and level design created by me.
-            </p>
-            <div class="tech-stack">
-              <span>Unity</span>
-              <span>C#</span>
-              <span>Blender</span>
-              <span>GIMP</span>
-              <span>GitHub</span>
-              <span>Visual Studio</span>
-              <span>Itch.io</span>
-            </div>
-          </div>
-        </div>
-        <details class="project-details">
-          <summary>Key Features</summary>
-          <ul>
-            <li>First-person atmospheric exploration set in a fictionalized 1977 Czechoslovakia</li>
-            <li>Custom radiation exposure and anomalous hazard gameplay systems</li>
-            <li>Night environment with limited visibility and flashlight mechanic</li>
-            <li>All models, textures, and level design created from scratch</li>
-            <li>Low-poly / PSX-inspired visual style using Unity Terrain and modular props</li>
-          </ul>
-          <p><a href="https://b1stmode.itch.io/bohunice-the-last-shift" target="_blank">Live Demo (itch.io)</a></p>
-        </details>
-      </div>
+<script src="script.js" defer></script>
 
-      <!-- Rocket Dodge -->
-      <div class="project">
-        <span class="project-badge project-badge--date">June 2025</span>
-        <div class="project-inner">
-          <div class="project-image">
-            <a href="https://b1stmode.itch.io/rocket-dodge-gamedevtv-course-project" target="_blank">
-              <img src="RocketDodge_Banner.jpg" alt="Rocket Dodge Screenshot">
-            </a>
-          </div>
-          <div class="project-content">
-            <h2>
-              <a href="https://github.com/B1stmode/RocketDodge_CourseProject" target="_blank">Rocket Dodge</a>
-            </h2>
-            <p>A precision-based physics game focused on timing, momentum, and player control.</p>
-            <p>
-              Originally created as part of a Unity course, then expanded beyond the tutorial
-              with additional systems, UI, and levels implemented independently.
-            </p>
-            <div class="tech-stack">
-              <span>Unity</span>
-              <span>C#</span>
-              <span>Blender</span>
-              <span>GitHub</span>
-              <span>Itch.io</span>
-            </div>
-          </div>
-        </div>
-        <details class="project-details">
-          <summary>Key Features</summary>
-          <ul>
-            <li>Physics-driven precision movement with tight, unforgiving controls</li>
-            <li>Increasing difficulty scaling across multiple levels</li>
-            <li>Main menu, level select, settings, and pause menu — added independently</li>
-            <li>Alternative W/A/D control scheme beyond the original tutorial</li>
-            <li>Death counter and custom end-game scene</li>
-          </ul>
-          <p><a href="https://b1stmode.itch.io/rocket-dodge-gamedevtv-course-project" target="_blank">Live Demo (itch.io)</a></p>
-          <p><a href="https://github.com/B1stmode/RocketDodge_CourseProject" target="_blank">GitHub</a></p>
-        </details>
-      </div>
-
-      <!-- Roll a Dice -->
-      <div class="project">
-        <span class="project-badge project-badge--date">February 2025</span>
-        <div class="project-inner">
-          <div class="project-image">
-            <a href="https://b1stmode.github.io/Roll-A-Dice_Project/" target="_blank">
-              <img src="Dice_Roll_Screen.jpeg" alt="Roll a Dice Screenshot">
-            </a>
-          </div>
-          <div class="project-content">
-            <h2>
-              <a href="https://github.com/B1stmode/Roll-A-Dice_Project" target="_blank">Roll a Dice</a>
-            </h2>
-            <p>Dice rolling simulator.</p>
-            <p>
-              A small JavaScript project demonstrating basic interactivity and DOM manipulation.
-              Started from a tutorial and extended with additional functionality and UI improvements.
-            </p>
-            <div class="tech-stack">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-              <span>VS Code</span>
-            </div>
-          </div>
-        </div>
-        <details class="project-details">
-          <summary>Key Features</summary>
-          <ul>
-            <li>Two independent dice with separate roll histories</li>
-            <li>Roll history management with deletion support</li>
-            <li>Event-driven DOM manipulation — no frameworks</li>
-            <li>Custom responsive styling added beyond the tutorial base</li>
-          </ul>
-          <p><a href="https://b1stmode.github.io/Roll-A-Dice_Project/" target="_blank">Live Demo</a></p>
-          <p><a href="https://github.com/B1stmode/Roll-A-Dice_Project" target="_blank">GitHub</a></p>
-        </details>
-      </div>
-
-    </div>
-    <!-- Footer Section -->
-    <section id="contact" class="container">
-      <p>&copy; 2026 Tymofii Yakushevych</p>
-    </section>
 </body>
+</html>

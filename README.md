@@ -14,9 +14,9 @@ This website serves as a central hub for my work, demonstrating frontend develop
 
 ## Features
 - Responsive layout for desktop, laptop, and mobile screens  
-- "About Me" section with adaptive text and image placement  
-- Interactive project links with animated arrows  
-- Skills and learning sections styled with hover effects    
+- English/Czech language toggle, single page, no separate pages per language  
+- Featured projects presented as full case studies; the rest in a scalable index list  
+- Key features for each project expand in place — no need to leave the page  
 - Lightweight, framework-free implementation  
 
 ---
@@ -31,6 +31,7 @@ This website serves as a central hub for my work, demonstrating frontend develop
 ## Tech Stack
 - HTML5  
 - CSS3  
+- Vanilla JavaScript (language toggle only — no framework, no build step)  
 - GitHub Pages (hosting)  
 
 ---
