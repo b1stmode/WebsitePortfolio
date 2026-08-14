@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mockup — Learning section (courses + certificates)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+
+  <style>
+    /* ── Mockup-only scaffolding, not part of the real site ── */
+    .mockup-banner {
+      background: #1a1204; color: #e8c468; border-bottom: 1px solid rgba(232,196,104,0.3);
+      font-size: 0.875rem; padding: var(--space-2) 0;
+    }
+    .mockup-banner .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5em 1.2em; }
+    .mockup-banner a { color: #e8c468; text-decoration: underline; }
+
+    /* ── Courses — imageless, just title + description (no .index-thumb) ── */
+    .index-row.no-thumb { padding: var(--space-3) 0; }
+
+    /* ── Certificates — fixed-width tiles, centered as a group so a leftover row never stretches or dangles ── */
+    .cert-grid-b { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-3); margin-top: var(--space-2); }
+    .cert-card-b { display: block; width: 140px; flex: 0 0 auto; }
+    .cert-thumb-b {
+      aspect-ratio: 4 / 3; border-radius: var(--radius); margin-bottom: 0.5rem;
+      background: repeating-linear-gradient(135deg, rgba(242,242,240,0.05) 0 8px, transparent 8px 16px);
+      display: flex; align-items: center; justify-content: center;
+      transition: filter 0.2s ease;
+    }
+    .cert-thumb-b span { font-size: 0.7rem; color: var(--ink-muted); }
+    .cert-card-b:hover .cert-thumb-b { filter: brightness(1.15); }
+    .cert-name-b {
+      font-size: 0.875rem; font-weight: 600; font-family: 'Space Grotesk', sans-serif;
+      color: var(--ink); display: inline-flex; align-items: baseline; gap: 0.3em;
+      justify-content: center; width: 100%; text-align: center;
+    }
+    .cert-name-b::after { content: "↗"; font-size: 0.6em; opacity: 0.6; transition: transform 0.2s ease, opacity 0.2s ease; }
+    .cert-card-b:hover .cert-name-b { color: var(--accent); }
+    .cert-card-b:hover .cert-name-b::after { opacity: 1; transform: translate(2px, -2px); }
+  </style>
+</head>
+
+<body>
+
+  <div class="mockup-banner">
+    <div class="wrap">
+      <strong>MOCKUP</strong>
+      <span>Converged direction: imageless course rows + centered certificate thumbnail tiles. Placeholder images/links throughout — not final copy.</span>
+    </div>
+  </div>
+
+  <main>
+
+    <section class="work" style="border-top:none;">
+      <div class="wrap">
+        <h2>Learning</h2>
+        <p class="work-note">Courses I've worked through, and certificates completed along the way.</p>
+
+        <p class="index-heading">Courses</p>
+        <div class="index-list">
+          <div class="index-row no-thumb">
+            <div class="index-body">
+              <h4>GamedevTV — Full Unity Course</h4>
+              <p class="i-desc">Structured course expanding on Unity workflows and C# scripting through guided projects and practical game systems.</p>
+            </div>
+          </div>
+          <div class="index-row no-thumb">
+            <div class="index-body">
+              <h4>C# Programming with Unity 3D</h4>
+              <p class="i-desc">Beginner-friendly introduction to Unity and C#, used as an initial resource to understand core scripting concepts and engine basics.</p>
+            </div>
+          </div>
+          <div class="index-row no-thumb">
+            <div class="index-body">
+              <h4>Comprehensive Frontend Course</h4>
+              <p class="i-desc">Project-based course covering HTML, CSS, and JavaScript through short and practical projects.</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="index-heading" style="margin-top: var(--space-4);">Certificates</p>
+        <div class="cert-grid-b">
+          <a class="cert-card-b" href="#">
+            <div class="cert-thumb-b"><span>placeholder</span></div>
+            <span class="cert-name-b">Claude 101</span>
+          </a>
+          <a class="cert-card-b" href="#">
+            <div class="cert-thumb-b"><span>placeholder</span></div>
+            <span class="cert-name-b">Claude Cowork</span>
+          </a>
+          <a class="cert-card-b" href="#">
+            <div class="cert-thumb-b"><span>placeholder</span></div>
+            <span class="cert-name-b">Claude Code 101</span>
+          </a>
+          <a class="cert-card-b" href="#">
+            <div class="cert-thumb-b"><span>placeholder</span></div>
+            <span class="cert-name-b">Coddy — JS Fundamentals</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer><div class="wrap">Mockup file — not linked from the live site.</div></footer>
+
+</body>
+</html>
