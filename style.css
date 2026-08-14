@@ -96,9 +96,26 @@ h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; let
 .skill-group li:hover { color: var(--ink); }
 .skill-group li:hover .icon-chip { background: rgba(var(--accent-rgb), 0.3); transform: translateY(-1px); }
 
+/* Learning — courses (imageless index rows) + certificate thumbnail tiles */
+.index-row.no-thumb { padding: var(--space-3) 0; }
+
+.cert-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-3); margin-top: var(--space-2); }
+.cert-card { display: block; width: 140px; flex: 0 0 auto; }
+.cert-thumb { border-radius: var(--radius); overflow: hidden; margin-bottom: 0.5rem; }
+.cert-thumb img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; transition: filter 0.2s ease; }
+.cert-card:hover .cert-thumb img { filter: brightness(1.1); }
+.cert-name {
+  font-size: 0.875rem; font-weight: 600; font-family: 'Space Grotesk', sans-serif;
+  color: var(--ink); display: flex; align-items: baseline; justify-content: center;
+  gap: 0.3em; text-align: center;
+}
+.cert-name::after { content: "↗"; font-size: 0.6em; opacity: 0.6; transition: transform 0.2s ease, opacity 0.2s ease; }
+.cert-card:hover .cert-name { color: var(--accent); }
+.cert-card:hover .cert-name::after { opacity: 1; transform: translate(2px, -2px); }
+
 /* Work */
-.work { padding: var(--space-5) 0 var(--space-6); border-top: 1px solid var(--rule); }
-.work h2 { font-size: 1.6rem; margin-bottom: var(--space-1); }
+.work, .learning { padding: var(--space-5) 0 var(--space-6); border-top: 1px solid var(--rule); }
+.work h2, .learning h2 { font-size: 1.6rem; margin-bottom: var(--space-1); }
 .work-note { color: var(--ink-muted); font-size: 0.9rem; margin-bottom: var(--space-6); max-width: var(--measure); }
 
 /* Case studies — no card box, no border, just type + one big image + a rule between entries */
@@ -166,11 +183,13 @@ details.kf li { break-inside: avoid; }
 .index-thumb { display: block; border-radius: var(--radius); overflow: hidden; flex: none; }
 .index-thumb img { width: 100%; aspect-ratio: 5 / 2; object-fit: cover; transition: filter 0.2s ease; }
 .index-thumb:hover img { filter: brightness(1.06); }
-.index-thumb.placeholder {
-  aspect-ratio: 5 / 2; background: repeating-linear-gradient(135deg, rgba(242,242,240,0.05) 0 8px, transparent 8px 16px);
+.index-thumb.placeholder, .cert-thumb.placeholder {
+  background: repeating-linear-gradient(135deg, rgba(242,242,240,0.05) 0 8px, transparent 8px 16px);
   display: flex; align-items: center; justify-content: center;
 }
-.index-thumb.placeholder span { font-size: 0.75rem; color: var(--ink-muted); }
+.index-thumb.placeholder { aspect-ratio: 5 / 2; }
+.cert-thumb.placeholder { aspect-ratio: 4 / 3; }
+.index-thumb.placeholder span, .cert-thumb.placeholder span { font-size: 0.75rem; color: var(--ink-muted); }
 .index-body h4 { font-size: 1.0625rem; font-weight: 600; font-family: 'Space Grotesk', sans-serif; margin-bottom: 0.2rem; }
 .index-body h4 a { display: inline-flex; align-items: baseline; gap: 0.3em; color: var(--ink); }
 .index-body h4 a:hover { color: var(--accent); }

@@ -1,1 +1,5 @@
 CLAUDE.md
+
+# Source certificate PDFs — kept locally only; the PNG thumbnails generated
+# from them are what the site actually uses and stay tracked.
+certificates/*.pdf

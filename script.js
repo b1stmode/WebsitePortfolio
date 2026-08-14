@@ -8,6 +8,13 @@
       aboutP1: "I build games, web apps, and developer tools — whatever the problem calls for.",
       aboutP2: "My approach is hands-on: dive in, figure out what works, learn from what doesn't, and keep iterating.",
       skillsMarker: "Skills",
+      learningHeading: "Learning",
+      learningNote: "Courses I've worked through, and certificates completed along the way.",
+      coursesHeading: "Courses",
+      certsHeading: "Certificates",
+      course1Desc: "Structured course expanding on Unity workflows and C# scripting through guided projects and practical game systems.",
+      course2Desc: "Beginner-friendly introduction to Unity and C#, used as an initial resource to understand core scripting concepts and engine basics.",
+      course3Desc: "Project-based course covering HTML, CSS, and JavaScript through short and practical projects.",
       workHeading: "Selected work",
       workNote: "Two most recent projects in full, everything else indexed below.",
       standbyLatest: "Latest",
@@ -56,7 +63,8 @@
     //    aboutP1, aboutP2, bhDesc, bhKf1, bhKf2, bhKf3, rdKf1, rdKf2, radDesc, radKf1, radKf2
     //  - NOT yet verified by the site owner (first-pass AI translation — review before treating as final):
     //    eyebrow, heroLine1, heroAccent, heroSub, skillsMarker, workHeading, workNote,
-    //    standby*, gearup*, pm*, indexHeading, cmDesc, cmKf1-3, rdDesc, rdKf3
+    //    standby*, gearup*, pm*, indexHeading, cmDesc, cmKf1-3, rdDesc, rdKf3,
+    //    learningHeading, learningNote, coursesHeading, certsHeading, course1Desc, course2Desc, course3Desc
     cs: {
       eyebrow: "Software a herní vývojář",
       heroLine1: "Ideas in motion, ",
@@ -65,6 +73,13 @@
       aboutP1: "Vyvíjím hry, webové aplikace a vývojářské nástroje — cokoliv, co situace vyžaduje.",
       aboutP2: "Můj přístup je praktický: ponořím se do projektu, zjistím, co funguje, poučím se z chyb a neustále iteruji.",
       skillsMarker: "Dovednosti",
+      learningHeading: "Vzdělávání",
+      learningNote: "Kurzy, kterými jsem prošel, a certifikáty získané po cestě.",
+      coursesHeading: "Kurzy",
+      certsHeading: "Certifikáty",
+      course1Desc: "Strukturovaný kurz rozšiřující znalosti Unity workflow a C# skriptování prostřednictvím vedených projektů a praktických herních systémů.",
+      course2Desc: "Úvod pro začátečníky do Unity a C#, použitý jako první zdroj pro pochopení základních konceptů skriptování a enginu.",
+      course3Desc: "Projektově orientovaný kurz pokrývající HTML, CSS a JavaScript prostřednictvím krátkých praktických projektů.",
       workHeading: "Vybrané projekty",
       workNote: "Dva nejaktuálnější projekty v plném rozsahu, zbytek je v seznamu níže.",
       standbyLatest: "Nejnovější",
