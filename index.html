@@ -140,7 +140,34 @@
   <section class="work">
     <div class="wrap">
       <h2 data-i18n="workHeading">Selected work</h2>
-      <p class="work-note" data-i18n="workNote">Two most recent projects in full, everything else indexed below.</p>
+      <p class="work-note" data-i18n="workNote">Two featured projects in full, everything else indexed below.</p>
+
+      <article class="case-study">
+        <p class="cs-meta"><span class="dot"></span><span data-i18n="ratDate">September 2026</span></p>
+        <h3><a href="https://b1stmode.github.io/RAT_PMC_Website/" target="_blank" rel="noopener noreferrer">RAT PMC Website</a></h3>
+        <p class="cs-role" data-i18n="ratRole">Website for RAT PMC, the Czech airsoft team I co-founded.</p>
+        <a class="cs-image" href="https://b1stmode.github.io/RAT_PMC_Website/" target="_blank" rel="noopener noreferrer">
+          <img src="RAT-PMC_Banner.jpg" alt="RAT PMC website homepage screenshot">
+          <span class="cs-hint">View live ↗</span>
+        </a>
+        <p class="cs-desc" data-i18n="ratDesc">The team's public home: who we are, how we train, and how to join. It started in 2025 as a simple site for the 10.SOF Brigade, was rebuilt when RAT PMC was founded, and redesigned in 2026 around a year-by-year photo archive. Designed and directed by me, built with the assistance of Claude Code.</p>
+        <p class="cs-tags">Claude Code · HTML · CSS · JavaScript · GitHub Pages</p>
+        <details class="kf">
+          <summary data-i18n="kfLabel">Key features</summary>
+          <div class="kf-body">
+            <ul>
+              <li data-i18n="ratKf1">Home, About, and Gallery pages covering the team's history and its three detachments</li>
+              <li data-i18n="ratKf2">Photo archive grouped by year, with a full-screen viewer</li>
+              <li data-i18n="ratKf3">Image pipeline that generates WebP and JPG sizes for fast loading</li>
+              <li data-i18n="ratKf4">Mobile-first layout</li>
+              <li data-i18n="ratKf5">Recruitment handled through the team's Discord</li>
+            </ul>
+            <p class="kf-links">
+              <a href="https://b1stmode.github.io/RAT_PMC_Website/" target="_blank" rel="noopener noreferrer">Live site</a>
+            </p>
+          </div>
+        </details>
+      </article>
 
       <article class="case-study">
         <p class="cs-meta"><span class="dot"></span><span data-i18n="standbyDate">June 2026</span></p>
@@ -171,33 +198,6 @@
         </details>
       </article>
 
-      <article class="case-study">
-        <p class="cs-meta"><span class="dot"></span><span data-i18n="pmDate">June 2026</span></p>
-        <h3><a href="https://github.com/B1stmode/ProjectManagementJournal" target="_blank" rel="noopener noreferrer">Project Management Journal</a></h3>
-        <p class="cs-role" data-i18n="pmRole">Project-management workspace for running several software projects at once.</p>
-        <a class="cs-image" href="https://github.com/B1stmode/ProjectManagementJournal" target="_blank" rel="noopener noreferrer">
-          <img src="PM-Journal_Banner_Fix.png" alt="Project Management Journal screenshot">
-          <span class="cs-hint">GitHub ↗</span>
-        </a>
-        <p class="cs-desc" data-i18n="pmDesc">Built around one question: what should I work on next? Projects break down into versions, milestones, and tasks, with work sessions tracked alongside so the bigger picture stays visible. Vanilla web stack on a Supabase backend, currently running as a private deployment ahead of a public release. Designed and directed by me, with implementation developed through an AI-assisted workflow.</p>
-        <p class="cs-tags">Claude Code · JavaScript · HTML · CSS · Supabase · Cloudflare</p>
-        <details class="kf">
-          <summary data-i18n="kfLabel">Key features</summary>
-          <div class="kf-body">
-            <ul>
-              <li data-i18n="pmKf1">Project → version → milestone → task hierarchy instead of one flat task list</li>
-              <li data-i18n="pmKf2">Work-session tracking for continuity between sessions</li>
-              <li data-i18n="pmKf3">Offline support that syncs once the connection returns</li>
-              <li data-i18n="pmKf4">Installable as a Progressive Web App</li>
-              <li data-i18n="pmKf5">Calendar integration with iCal feeds</li>
-            </ul>
-            <p class="kf-links">
-              <a href="https://github.com/B1stmode/ProjectManagementJournal" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </p>
-          </div>
-        </details>
-      </article>
-
       <div class="index-list">
         <div class="index-row">
           <a class="index-thumb" href="https://github.com/b1stmode/GithubExplorer" target="_blank" rel="noopener noreferrer">
@@ -214,6 +214,26 @@
                   <li data-i18n="geKf1">Profile explorer — repositories, languages, activity, and metrics</li>
                   <li data-i18n="geKf2">Repository search with in-page detail view and README display</li>
                   <li data-i18n="geKf3">Client-side only — no login, backend, or build tools required</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="index-row">
+          <a class="index-thumb" href="https://github.com/B1stmode/ProjectManagementJournal" target="_blank" rel="noopener noreferrer">
+            <img src="PM-Journal_Banner_Fix.png" alt="Project Management Journal screenshot">
+          </a>
+          <div class="index-body">
+            <h4><a href="https://github.com/B1stmode/ProjectManagementJournal" target="_blank" rel="noopener noreferrer">Project Management Journal</a></h4>
+            <p class="index-date"><span class="dot"></span><span data-i18n="pmDate">June 2026</span></p>
+            <p class="i-desc" data-i18n="pmDesc">Project-management workspace built around knowing what to work on next.</p>
+            <details class="kf">
+              <summary data-i18n="kfLabel">Key features</summary>
+              <div class="kf-body">
+                <ul>
+                  <li data-i18n="pmKf1">Project → version → milestone → task hierarchy instead of one flat task list</li>
+                  <li data-i18n="pmKf2">Work-session tracking for continuity between sessions</li>
+                  <li data-i18n="pmKf3">Offline-capable PWA on a Supabase backend, syncing when the connection returns</li>
                 </ul>
               </div>
             </details>
