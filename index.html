@@ -156,14 +156,61 @@
   <section class="work">
     <div class="wrap">
       <h2 data-i18n="workHeading">Selected work</h2>
-      <p class="work-note" data-i18n="workNote">Two featured projects in full, everything else indexed below.</p>
+      <p class="work-note" data-i18n="workNote">Three featured projects in full, everything else indexed below.</p>
+
+      <article class="case-study">
+        <p class="cs-meta"><span class="dot"></span><span data-i18n="clioDate">November 2026</span></p>
+        <h3>Clio</h3>
+        <p class="cs-role" data-i18n="clioRole">Study workspace that brings learning materials, assignments, and an Obsidian vault together.</p>
+        <div class="cs-image"><img src="Clio_Banner.png" alt="Clio logo beside the overview, calendar and command palette screens"></div>
+        <p class="cs-desc" data-i18n="clioDesc">Built for my own school work: one place for deadlines, study materials, and notes, without replacing the tools I already use. Obsidian stays the source of truth for notes, and Clio adds the organisation around them. Designed and directed by me, built with the assistance of Claude Code.</p>
+        <p class="cs-tags">Claude Code · React · TypeScript · Tailwind CSS · Supabase · Cloudflare</p>
+        <details class="kf">
+          <summary data-i18n="kfLabel">Key features</summary>
+          <div class="kf-body">
+            <ul>
+              <li data-i18n="clioKf1">Overview with today's focus, upcoming deadlines, and recently opened items</li>
+              <li data-i18n="clioKf2">Assignments with deadlines, priorities, and progress, in agenda or calendar view</li>
+              <li data-i18n="clioKf3">Resource library for files and links, organised by subject and topic</li>
+              <li data-i18n="clioKf4">Works with an existing local Obsidian vault — browse, read, and create notes</li>
+              <li data-i18n="clioKf5">Installable PWA with keyboard shortcuts and a command palette</li>
+            </ul>
+          </div>
+        </details>
+      </article>
+
+      <article class="case-study">
+        <p class="cs-meta"><span class="dot"></span><span data-i18n="sspsDate">November 2026 · In progress</span></p>
+        <h3><a href="https://veselymatej.github.io/SSPSAirsoft/index.html" target="_blank" rel="noopener noreferrer">SSPŠ Airsoft Club Website</a></h3>
+        <p class="cs-role" data-i18n="sspsRole">Website for the SSPŠ school airsoft club, which I co-founded and help organise.</p>
+        <a class="cs-image" href="https://veselymatej.github.io/SSPSAirsoft/index.html" target="_blank" rel="noopener noreferrer">
+          <img src="SSPS-Airsoft_Banner.jpg" alt="SSPŠ airsoft club crest beside desktop and mobile screens of the website">
+          <span class="cs-hint">View live ↗</span>
+        </a>
+        <p class="cs-desc" data-i18n="sspsDesc">The club's public face for students and potential partners: who we are, what we do, and how safety is handled. Built in planned steps on a small design system of tokens and shared components. Still in progress, so some sections hold placeholders until the club's details are final. Designed and directed by me, built with the assistance of Claude Code.</p>
+        <p class="cs-tags">Claude Code · HTML · CSS · JavaScript · GitHub Pages</p>
+        <details class="kf">
+          <summary data-i18n="kfLabel">Key features</summary>
+          <div class="kf-body">
+            <ul>
+              <li data-i18n="sspsKf1">Czech-language site with home, about, gallery, and partner pages</li>
+              <li data-i18n="sspsKf2">Design tokens and shared components keep every page consistent</li>
+              <li data-i18n="sspsKf3">Accessible mobile menu with focus trap, Esc to close, and scroll lock</li>
+              <li data-i18n="sspsKf4">Responsive WebP and JPG photos in three sizes</li>
+            </ul>
+            <p class="kf-links">
+              <a href="https://veselymatej.github.io/SSPSAirsoft/index.html" target="_blank" rel="noopener noreferrer">Live site</a>
+            </p>
+          </div>
+        </details>
+      </article>
 
       <article class="case-study">
         <p class="cs-meta"><span class="dot"></span><span data-i18n="ratDate">September 2026</span></p>
         <h3><a href="https://b1stmode.github.io/RAT_PMC_Website/" target="_blank" rel="noopener noreferrer">RAT PMC Website</a></h3>
         <p class="cs-role" data-i18n="ratRole">Website for RAT PMC, the Czech airsoft team I co-founded.</p>
         <a class="cs-image" href="https://b1stmode.github.io/RAT_PMC_Website/" target="_blank" rel="noopener noreferrer">
-          <img src="RAT-PMC_Banner.jpg" alt="RAT PMC website homepage screenshot">
+          <img src="RAT-PMC_Banner.jpg" alt="RAT PMC skeleton logo beside the gallery and mobile pages of the website">
           <span class="cs-hint">View live ↗</span>
         </a>
         <p class="cs-desc" data-i18n="ratDesc">The team's public home: who we are, how we train, and how to join. It started in 2025 as a simple site for the 10.SOF Brigade, was rebuilt when RAT PMC was founded, and redesigned in 2026 around a year-by-year photo archive. Designed and directed by me, built with the assistance of Claude Code.</p>
@@ -180,35 +227,6 @@
             </ul>
             <p class="kf-links">
               <a href="https://b1stmode.github.io/RAT_PMC_Website/" target="_blank" rel="noopener noreferrer">Live site</a>
-            </p>
-          </div>
-        </details>
-      </article>
-
-      <article class="case-study">
-        <p class="cs-meta"><span class="dot"></span><span data-i18n="standbyDate">June 2026</span></p>
-        <h3><a href="https://github.com/B1stmode/STANDBY-YourRangeTool" target="_blank" rel="noopener noreferrer">STANDBY: Your Range Tool</a></h3>
-        <p class="cs-role" data-i18n="standbyRole">Shot timer and training companion for airsoft and range training.</p>
-        <a class="cs-image" href="https://standby-9um.pages.dev/" target="_blank" rel="noopener noreferrer">
-          <img src="STANDBY_Banner.png" alt="STANDBY app screenshot">
-          <span class="cs-hint">View live ↗</span>
-        </a>
-        <p class="cs-desc" data-i18n="standbyDesc">A mobile-first Progressive Web App built for use on the range, during the drill, in the moment,timer, drill library, and training log in a single offline-capable tool. Designed and directed by me, with implementation developed through an AI-assisted workflow.</p>
-        <p class="cs-tags">Claude Code · JavaScript · HTML · CSS · IndexedDB · Cloudflare</p>
-        <details class="kf">
-          <summary data-i18n="kfLabel">Key features</summary>
-          <div class="kf-body">
-            <ul>
-              <li data-i18n="standbyKf1">Offline-first PWA — installable on phone and desktop, no account required</li>
-              <li data-i18n="standbyKf2">Audio-based shot detection — mic stops the timer on confirmed shots</li>
-              <li data-i18n="standbyKf3">Drill library with built-in classics and a custom drill builder</li>
-              <li data-i18n="standbyKf4">Calibration system — measures ambient noise to suggest your threshold</li>
-              <li data-i18n="standbyKf5">Training log — notebook-style entries with splits and scores</li>
-              <li data-i18n="standbyKf6">Field Mode for outdoor readability in direct sunlight</li>
-            </ul>
-            <p class="kf-links">
-              <a href="https://standby-9um.pages.dev/" target="_blank" rel="noopener noreferrer">Live app</a>
-              <a href="https://github.com/B1stmode/STANDBY-YourRangeTool" target="_blank" rel="noopener noreferrer">GitHub</a>
             </p>
           </div>
         </details>
@@ -250,6 +268,26 @@
                   <li data-i18n="pmKf1">Project → version → milestone → task hierarchy instead of one flat task list</li>
                   <li data-i18n="pmKf2">Work-session tracking for continuity between sessions</li>
                   <li data-i18n="pmKf3">Offline-capable PWA on a Supabase backend, syncing when the connection returns</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="index-row">
+          <a class="index-thumb" href="https://standby-9um.pages.dev/" target="_blank" rel="noopener noreferrer">
+            <img src="STANDBY_Banner.png" alt="STANDBY app screenshot">
+          </a>
+          <div class="index-body">
+            <h4><a href="https://github.com/B1stmode/STANDBY-YourRangeTool" target="_blank" rel="noopener noreferrer">STANDBY: Your Range Tool</a></h4>
+            <p class="index-date"><span class="dot"></span><span data-i18n="standbyDate">June 2026</span></p>
+            <p class="i-desc" data-i18n="standbyDesc">Shot timer and training companion for airsoft and range training.</p>
+            <details class="kf">
+              <summary data-i18n="kfLabel">Key features</summary>
+              <div class="kf-body">
+                <ul>
+                  <li data-i18n="standbyKf1">Offline-first PWA — installable on phone and desktop, no account required</li>
+                  <li data-i18n="standbyKf2">Audio-based shot detection — mic stops the timer on confirmed shots</li>
+                  <li data-i18n="standbyKf3">Drill library with built-in classics and a custom drill builder</li>
                 </ul>
               </div>
             </details>
